@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 
 import styled from "styled-components";
+import Footer from "../../components/UI/Footer/Footer";
 
 import Header from "../../components/UI/Header";
 import { MainLayoutProps } from "../../types/MainLayoutProps";
@@ -17,6 +18,7 @@ const MainLayout = ({ children }: MainLayoutProps): JSX.Element => {
     <Fragment>
       <Header></Header>
       <Layout>{children}</Layout>
+      <Footer></Footer>
     </Fragment>
   );
 };

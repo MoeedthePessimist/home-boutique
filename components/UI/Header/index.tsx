@@ -6,6 +6,7 @@ import { up, between } from "styled-breakpoints";
 
 import LogoImage from "../../../public/images/logo.png";
 import { HamburgerLayerProps } from "../../../types/HamburgerLayerProps";
+import { ContentProps } from "../../../types/ContentProps";
 
 export const Navbar = styled.nav`
   display: flex;
@@ -29,7 +30,7 @@ export const Logo = styled.div`
   width: clamp(100px, 150px, 200px);
 `;
 
-export const Content = styled.ul`
+export const Content = styled.ul<ContentProps>`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -44,9 +45,8 @@ export const Content = styled.ul`
   transition: all 0.5s ease-in-out;
 
   transform: translateX(
-    ${(props: HamburgerLayerProps) => (props.open ? "0" : "100%")}
+    ${(props: ContentProps) => (props.open ? "0" : "100%")}
   );
-  // opacity: ${(props: HamburgerLayerProps) => (props.open ? "1" : "0")};
 
   ${up("md")} {
     position: static;

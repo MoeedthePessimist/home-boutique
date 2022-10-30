@@ -1,0 +1,13 @@
+{
+  "/_app": "pages/_app.js",
+  "/admin": "pages/admin.html",
+  "/api/hello": "pages/api/hello.js",
+  "/customer/about": "pages/customer/about.html",
+  "/customer/contact": "pages/customer/contact.html",
+  "/": "pages/index.html",
+  "/_error": "pages/_error.js",
+  "/customer/home": "pages/customer/home.js",
+  "/customer/store": "pages/customer/store.js",
+  "/_document": "pages/_document.js",
+  "/404": "pages/404.html"
+}
